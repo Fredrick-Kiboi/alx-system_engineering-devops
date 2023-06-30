@@ -98,3 +98,13 @@ You will soon have to manage your own servers concept page hosted on remote data
   - display minutes from 1 to 59
 **Requirements:**<br>
   - You must use the while loop (for and until are forbidden)
+
+8. *For ls* <br>
+*mandatory*
+- Write a Bash script that displays:
+  - The content of the current directory
+  - In a list format
+  - Where only the part of the name after the first dash is displayed (refer to the example)
+**Requirements:** <br>
+  - You must use the for loop (while and until are forbidden)
+  - Do not display hidden files

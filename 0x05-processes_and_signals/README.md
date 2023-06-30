@@ -29,3 +29,7 @@
 - How to kill a process
 - What is a signal
 - What are the 2 signals that cannot be ignored
+
+0. **What is my PID** <br>
+*mandatory*
+- Write a Bash script that displays its own PID.

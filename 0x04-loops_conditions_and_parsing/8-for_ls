@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
-# This script displays the content of the current directory in a list format,
-# where only the part of the name after the first dash is displayed.
+#!/bin/bash
+# displays the content of the directory in a list format
 
 for file in *; do
   name=$(echo "$file" | cut -d '-' -f 2)

@@ -59,3 +59,7 @@ You will soon have to manage your own servers concept page hosted on remote data
 2. **While Best School loop** <br>
 *mandatory*
 - Write a Bash script that displays Best School 10 times using while.
+
+3. **Until Best School loop** <br>
+*mandatory*
+- Write a Bash script that displays Best School 10 times.

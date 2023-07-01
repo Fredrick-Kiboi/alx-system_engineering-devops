@@ -52,4 +52,3 @@
 3. **Show your Bash PID made easy** <br>
 *mandatory*
 - Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word bash.
-

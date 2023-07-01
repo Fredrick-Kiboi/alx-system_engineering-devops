@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Bash script that diplays the vistor's IP along with the https status code
 
-awk '{ echo $1 $9}' apache-access.log
+awk '{print $1, $9}' apache-access.log

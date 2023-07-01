@@ -163,3 +163,15 @@ You will soon have to manage your own servers concept page hosted on remote data
 - You must use awk
 - You are not allowed to use while, for, until and cut
 - Download and commit the apache-access.log file along with your answers files
+
+14. **Dig the data** <br>
+*#advanced*
+- Write a Bash script that groups visitors by IP and HTTP status code, and displays this data.
+**Requirements:**
+- The exact format must be:
+  - OCCURENCE_NUMBER IP HTTP_CODE
+  - In list format
+  - Ordered from the greatest to the lowest number of occurrences
+**See example** <br>
+- You must use awk
+- You are not allowed to use while, for, until and cut

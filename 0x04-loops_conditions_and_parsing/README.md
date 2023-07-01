@@ -153,3 +153,13 @@ You will soon have to manage your own servers concept page hosted on remote data
 
 - Requirements:
 - You must use the while loop (for and until are forbidden)
+
+13. **Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.** <br>
+*advanced* <br>
+**Requirement:**
+- Format: IP HTTP_CODE
+- in a list format
+**See example** <br>
+- You must use awk
+- You are not allowed to use while, for, until and cut
+- Download and commit the apache-access.log file along with your answers files

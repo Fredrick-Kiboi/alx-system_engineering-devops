@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Sort the input by IP and HTTP status code
+sort -k 1,1 -k 2,2 -n < apache_access.log
+
+# Use awk to group the lines by IP and HTTP status code, and count the number of occurrences of each group
+awk -F' ' '{
+  ip = $1
+    http_code = $2
+      count[$ip,$http_code]++
+}
+END {
+  for (ip in count) {
+	      print count[ip] " " ip " " $ip
+	        }
+}'

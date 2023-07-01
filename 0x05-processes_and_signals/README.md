@@ -58,3 +58,9 @@
 - Write a Bash script that displays To infinity and beyond indefinitely.
 **Requirements:**
   - In between each iteration of the loop, add a sleep 2
+
+5. **Don't stop me now!** <br>
+*mandatory*
+- Write a Bash script that stops 4-to_infinity_and_beyond process.
+**Requirements:**
+  - You must use kill

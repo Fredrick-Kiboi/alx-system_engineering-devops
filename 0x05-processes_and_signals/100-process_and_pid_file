@@ -2,8 +2,9 @@
 # Bash script that executes a file and kills it with ctrl+c
 
 pid_file="/var/run/myscript.pid"
-echo $$ >> "$pid_file"
+echo $$ > "$pid_file"
 
+# Signal handler functions
 handle_sigterm() {
 	echo "I hate the kill command"
 }
@@ -17,9 +18,10 @@ handle_sigquit() {
 	exit
 }
 
+# Set signal handlers
 trap 'handle_sigterm' SIGTERM
 trap 'handle_sigint' SIGINT
-trap 'handle_sigquit' SIGQUIT SIGTERM
+trap 'handle_sigquit' SIGQUIT
 
 while true; do
 	echo "To infinity and beyond"

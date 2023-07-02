@@ -14,14 +14,14 @@ handle_sigint() {
 }
 
 handle_sigquit() {
-	rm "$pid_file"
+	rm -f "$pid_file"
 	exit
 }
 
 # Set signal handlers
 trap 'handle_sigterm' SIGTERM
 trap 'handle_sigint' SIGINT
-trap 'handle_sigquit' SIGQUIT
+trap 'handle_sigquit' SIGQUIT SIGTERM
 
 while true; do
 	echo "To infinity and beyond"

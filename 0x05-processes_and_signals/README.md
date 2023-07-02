@@ -71,3 +71,10 @@
 **Requirements:**
   - You cannot use kill or killall
 
+7. **Highlander** <br>
+- Write a Bash script that displays:
+  - To infinity and beyond indefinitely
+  - With a sleep 2 in between each iteration
+  - I am invicible!!! when receiving a SIGTERM signal
+- Make a copy of you 6-stop_me_if_you_can script, name it 67-stop_me_if_you_can, that kills the 7-highlander process instead of the 4-to_infinity_and_beyond one.
+

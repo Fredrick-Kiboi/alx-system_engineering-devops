@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script that manages manage_my_process
+
+if [ $# -ne 2 ]; then
+    echo "Usage: manage_my_process {start|stop|restart}"
+fi

@@ -6,5 +6,5 @@ i=0
 while [ $i -eq 0 ]; do
     echo "To infinity and beyond"
     sleep 2
-    trap "I am invicible!!!" SIGINIT SIGTERM
+    trap 'echo "I am invicible!!!"' SIGTERM
 done

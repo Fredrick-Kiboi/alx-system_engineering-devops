@@ -7,6 +7,8 @@ echo $$ > "$pid_file"
 # Signal handler functions
 handle_sigterm() {
 	echo "I hate the kill command"
+	rm -f "$pid_file"
+	exit
 }
 
 handle_sigint() {
@@ -21,7 +23,7 @@ handle_sigquit() {
 # Set signal handlers
 trap 'handle_sigterm' SIGTERM
 trap 'handle_sigint' SIGINT
-trap 'handle_sigquit' SIGQUIT SIGTERM
+trap 'handle_sigquit' SIGQUIT
 
 while true; do
 	echo "To infinity and beyond"

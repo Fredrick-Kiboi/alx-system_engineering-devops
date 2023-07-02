@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Bash script that executes a file and kills it with ctrl+c
+
+pid_file="/var/run/myscript.pid"
+echo $$ >> "$pid_file"
+
+handle_sigterm() {
+	echo "I hate the kill command"
+}
+
+handle_sigint() {
+	echo "Y U no love me?!"
+}
+
+handle_sigquit() {
+	rm "$pid_file"
+	exit
+}
+
+trap 'handle_sigterm' SIGTERM
+trap 'handle_sigint' SIGINT
+trap 'handle_sigquit' SIGQUIT SIGTERM
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 1
+done

@@ -11,11 +11,11 @@ if [ $# -eq 1 ]; then
 	    echo "manage_my_process started"
     elif [ "$1" == "stop" ]; then
 	    kill "$(cat $pid_file)"
-	    rm "$pid_file"
+	    rm -f "$pid_file"
 	    echo "manage_my_process stopped"
     elif [ "$1" == "restart" ]; then
 	    kill "$(cat $pid_file)"
-	    rm "$pid_file"
+	    rm -f "$pid_file"
 	    ./$my_file &
 	    echo "$!" >> "$pid_file"
 	    echo "manage_my_process restarted"

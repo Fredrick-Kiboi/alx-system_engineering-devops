@@ -71,3 +71,8 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
 - Your regex should not contain square brackets
 
+5. **Not quite HBTN yet** <br>
+*mandatory*
+- Requirements:
+  - The regular expression must be exactly matching a string that starts with h ends with n and can have any single character in between
+  - Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method

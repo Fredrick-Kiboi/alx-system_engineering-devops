@@ -1,8 +1,24 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 int infinite_while(void);
+
+/**
+ * infinite_while - Infinite while that sleep indefinitely
+ *
+ * Return: void
+ */
+
+int infinite_while(void)
+{
+	while (1)
+	{
+		sleep(1);
+	}
+	return (0);
+}
 
 /**
  * main - C function that creates 5 zombie processes
@@ -22,7 +38,7 @@ int main(void)
 {
 	int i;
 
-	for (i = 0; i < 5; ++i)
+	for (i = 0; i < 5; i++)
 	{
 		pid_t child_pid;
 
@@ -30,23 +46,9 @@ int main(void)
 		if (child_pid == 0)
 		{
 			printf("Zombie process created, PID: %d\n", getpid());
+			exit(0);
 		}
 	}
 	infinite_while();
-	return (0);
-}
-
-/**
- * infinite_while - infinite while loop that sleeps for 1 min indefinitely
- *
- * Return: void
- */
-
-int infinite_while(void)
-{
-	while (1)
-	{
-		sleep(1);
-	}
 	return (0);
 }

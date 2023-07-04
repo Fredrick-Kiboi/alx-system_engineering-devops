@@ -87,3 +87,14 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 *mandatory*
 - Requirement:
   - The regular expression must be only matching: capital letters
+
+8. **Textme** <br>
+*#advanced*
+- This exercise was prepared for you by Guillaume Plessis, VP of Infrastructure at TextMe. It is something he uses daily. You can thank Guillaume for his project on Twitter.
+- For this task, you’ll be taking over Guillaume’s responsibilities: one afternoon, a TextMe VoIP Engineer comes to you and explains she wants to run some statistics on the TextMe app text messages transactions.
+- Requirements:
+  - Your script should output: [SENDER],[RECEIVER],[FLAGS]
+  - The sender phone number or name (including country code if present)
+  - The receiver phone number or name (including country code if present)
+  - The flags that were used
+  - You can find a [log file here].

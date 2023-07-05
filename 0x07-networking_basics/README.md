@@ -161,3 +161,12 @@ sylvain@ubuntu$ cat foo_answer_file
 - Write a Bash script that displays listening ports:
   - That only shows listening sockets
   - That shows the PID and name of the program to which each socket belongs
+
+5. **Is the host on the network** <br>
+*mandatory*
+- The Internet Control Message Protocol (ICMP) is a protocol in the Internet protocol suite. It is used by network devices, to check if other network devices are available on the network. The command ping uses ICMP to make sure that a network device remains online or to troubleshoot issues on the network.
+- Write a Bash script that pings an IP address passed as an argument.
+- Requirements:
+  - Accepts a string as an argument
+  - Displays Usage: 5-is_the_host_on_the_network {IP_ADDRESS} if no argument passed
+  - Ping the IP 5 times

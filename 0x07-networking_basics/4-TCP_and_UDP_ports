@@ -4,3 +4,4 @@
 #+ Shows the PID and name of the program to which each socket belongs
 
 sudo netstat -lp
+

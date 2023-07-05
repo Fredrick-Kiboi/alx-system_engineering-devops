@@ -81,7 +81,7 @@ sylvain@ubuntu$ cat foo_answer_file
 
 ## Tasks <br>
 0. **OSI model** <br>
-*mandatory*
+*mandatory* <br>
 - OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
 - It is organized from the lowest level to the highest level:
   - The lowest level: layer 1 which is for transmission on physical layers with electrical impulse, light or radio signal
@@ -100,3 +100,22 @@ sylvain@ubuntu$ cat foo_answer_file
 1. Alphabetically
 2. From the lowest to the highest level
 3. Randomly
+
+1. **Types of network** <br>
+*mandatory* <br>
+- LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
+**Questions:** <br>
+- What type of network a computer in local is connected to?
+1. Internet
+2. WAN
+3. LAN
+
+- What type of network could connect an office in one building to another office in a building a few streets away?
+1. Internet
+2. WAN
+3. LAN
+
+- What network do you use when you browse www.google.com from your smartphone (not connected to the Wifi)?
+1. Internet
+2. WAN
+3. LAN

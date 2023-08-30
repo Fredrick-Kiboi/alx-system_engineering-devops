@@ -1,0 +1,6 @@
+Host Fred
+    HostName 54.224.17.135
+    User ubuntu
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
+    PubkeyAuthentication yes
